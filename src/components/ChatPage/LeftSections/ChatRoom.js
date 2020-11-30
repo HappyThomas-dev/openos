@@ -26,12 +26,12 @@ function ChatRoom(props) {
   let initCompleted = false;
 
   useEffect(() => {
-    writeDebug(
-      "useEffect-- props.chatRoom     ASIS:%s : NEW:%s , last_line_key - ASIS:%s : NEW:%s , chat_contents -ASIS :%s : NEW:%s ",
-      chatRoom?.room_key, props.chatRoom.room_key, 
-      chatRoom?.last_line_key, props.chatRoom.last_line_key,
-      chatRoom?.chat_contents, props.chatRoom.chat_contents
-    );
+    // writeDebug(
+    //   "useEffect-- props.chatRoom     ASIS:%s : NEW:%s , last_line_key - ASIS:%s : NEW:%s , chat_contents -ASIS :%s : NEW:%s ",
+    //   chatRoom?.room_key, props.chatRoom.room_key, 
+    //   chatRoom?.last_line_key, props.chatRoom.last_line_key,
+    //   chatRoom?.chat_contents, props.chatRoom.chat_contents
+    // );
 
     // 방 정보가 바뀌었다면 이름을 새로 가져온다.
     if (!chatRoom 

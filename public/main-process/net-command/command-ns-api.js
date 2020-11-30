@@ -423,11 +423,6 @@ function reqSendChatMessage(roomKey, lineKey, userIds, message, fontName, roomTi
         }
 
         // dest userInfos
-        // let idDatas = '';
-        // destIds.forEach(function(userId){
-        //     idDatas += idDatas?CmdConst.SEP_CR+userId:userId;
-        //   });
-
         let idDatas = userIds.join(CmdConst.SEP_PIPE);
         // encrypt Message
         let encData = CryptoUtil.encryptMessage(message);
